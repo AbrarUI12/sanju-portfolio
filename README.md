@@ -8,7 +8,7 @@ An editorial, minimal portfolio for **Sanjoy Rozario**: full-stack developer and
 
 - Responsive React + TypeScript site with Vite and Tailwind CSS
 - Off-white/charcoal light and dark modes, with teal accents
-- Cutout portrait asset at `public/sanjoy-cutout.avif`
+- Cutout portrait asset at `public/sanjoy-cutout.webp`
 - Five linked projects, interactive category filters, conceptual project illustrations
 - About, skills, research, education, and contact sections
 - Accessible mobile navigation, reduced-motion support, email-copy interaction

@@ -246,7 +246,7 @@ export default function App() {
           <div className="hero-art" aria-label="Portrait of Sanjoy Rozario">
             <div className="portrait-backdrop"><div className="portrait-ring portrait-ring--one" /><div className="portrait-ring portrait-ring--two" /><div className="portrait-gridlines" /><span className="portrait-side-label">MADE WITH CURIOSITY © 2026</span><span className="portrait-index">01 / 05</span></div>
             <div className="portrait-frame">
-              <img src={BASE+'sanjoy-cutout.avif'} className="portrait-img" alt="Sanjoy Rozario" loading="eager" onError={e => { e.currentTarget.onerror=null; e.currentTarget.src='https://avatars.githubusercontent.com/u/174590991?v=4'; e.currentTarget.classList.add('portrait-img--fallback'); }} />
+              <img src={BASE+'sanjoy-cutout.webp'} className="portrait-img" alt="Sanjoy Rozario" loading="eager" decoding="async" fetchPriority="high" onError={e => { e.currentTarget.onerror=null; e.currentTarget.src='https://avatars.githubusercontent.com/u/174590991?v=4'; e.currentTarget.classList.add('portrait-img--fallback'); }} />
             </div>
             <div className="portrait-float"><span className="portrait-float-icon"><Sparkles size={17}/></span><span>BUILDING WITH INTENT<br/><strong>One idea at a time.</strong></span><ArrowUpRight size={16}/></div>
             <div className="portrait-dot portrait-dot--one" /><div className="portrait-dot portrait-dot--two" />
