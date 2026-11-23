@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, BookOpen, BrainCircuit,
-  Check, Code2, Copy, ExternalLink, Github, GraduationCap,
+  Check, Code2, Copy, Download, ExternalLink, Github, GraduationCap,
   Layers3, Linkedin, Mail, Menu, Moon, MoveUpRight, ScanFace,
   ShieldCheck, ShoppingBag, Sparkles, Sun, X
 } from 'lucide-react';
 
 const BASE = '/sanju-portfolio/';
+const CV_URL = BASE + 'Sanjoy_Rozario_CV.pdf';
 const EMAIL = 'sanjoyrozario27@gmail.com';
 const GITHUB = 'https://github.com/Sanjoyte';
 const LINKEDIN = 'https://www.linkedin.com/in/sanjoy-rozario-a8437526a/';
@@ -241,6 +242,7 @@ export default function App() {
             <h1>Crafting for<br />the <em>web.</em><br />Curious about<br /><span>what's next<span className="hero-period">.</span></span></h1>
             <p className="hero-description">Full-stack developer and CSE undergraduate creating practical digital products, with a growing focus on AI and computer vision.</p>
             <div className="hero-ctas"><a className="btn btn--primary" href="#work">Explore my work <ArrowDownRight size={18}/></a><a className="btn btn--outline" href="#contact">Get in touch <ArrowUpRight size={18}/></a></div>
+            <a className="hero-resume-link" href={CV_URL} download="Sanjoy_Rozario_CV.pdf"><Download size={17}/> Download CV <span>PDF · 1 page</span></a>
             <div className="hero-socials"><span>FIND ME ON</span><a href={GITHUB} target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18}/></a><a href={LINKEDIN} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={18}/></a><a href={'mailto:' + EMAIL} aria-label="Email"><Mail size={18}/></a></div>
           </div>
           <div className="hero-art" aria-label="Portrait of Sanjoy Rozario">
@@ -306,7 +308,7 @@ export default function App() {
       <section id="contact" className="contact-section"><div className="container">
         <div className="section-top contact-top reveal"><span className="section-number">05 / LET'S CONNECT</span><span className="section-side-note">ONE GOOD IDEA AWAY <ArrowUpRight size={15}/></span></div>
         <div className="contact-content reveal"><span className="contact-kicker"><span className="live-dot"/> OPEN TO CONVERSATIONS & OPPORTUNITIES</span><h2>Have an idea?<br /><em>Let's make it real.</em></h2><p>Whether it's a project, a role, or an interesting problem worth exploring, I'd love to hear about it.</p><a className="contact-main-link" href={'mailto:'+EMAIL}>Let's talk <MoveUpRight size={42}/></a></div>
-        <div className="contact-bottom"><div><span className="contact-bottom-label">EMAIL ME</span><button className="copy-email" onClick={copyEmail}>{EMAIL} {copied?<Check size={16}/>:<Copy size={16}/>}</button>{copied&&<span className="copied-label" role="status">Copied!</span>}</div><div><span className="contact-bottom-label">FIND ME HERE</span><div className="contact-social"><a href={GITHUB} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15}/></a><a href={LINKEDIN} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={15}/></a><a href={BASE+'resume.html'} target="_blank" rel="noreferrer">Résumé <ArrowUpRight size={15}/></a></div></div></div>
+        <div className="contact-bottom"><div><span className="contact-bottom-label">EMAIL ME</span><button className="copy-email" onClick={copyEmail}>{EMAIL} {copied?<Check size={16}/>:<Copy size={16}/>}</button>{copied&&<span className="copied-label" role="status">Copied!</span>}</div><div><span className="contact-bottom-label">FIND ME HERE</span><div className="contact-social"><a href={GITHUB} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15}/></a><a href={LINKEDIN} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={15}/></a><a href={CV_URL} download="Sanjoy_Rozario_CV.pdf">Download CV <Download size={15}/></a></div></div></div>
       </div></section>
     </main>
     <footer className="footer"><div className="container footer-inner"><a href="#top" className="footer-logo">sanjoy<span>.</span></a><span>© {new Date().getFullYear()} SANJOY ROZARIO. BUILT WITH CURIOSITY.</span><a href="#top">BACK TO TOP <ArrowRight size={15}/></a></div></footer>

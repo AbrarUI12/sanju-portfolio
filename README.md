@@ -12,6 +12,7 @@ An editorial, minimal portfolio for **Sanjoy Rozario**: full-stack developer and
 - Five linked projects, interactive category filters, conceptual project illustrations
 - About, skills, research, education, and contact sections
 - Accessible mobile navigation, reduced-motion support, email-copy interaction
+- Original uploaded PDF available for download at `public/Sanjoy_Rozario_CV.pdf` (hero, contact, and résumé page links)
 - Printable résumé at `/resume.html`
 - Automatic GitHub Actions build and deployment from `main`
 
