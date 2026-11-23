@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abrarui12.github.io/sanju-portfolio/sitemap.xml
